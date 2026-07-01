@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — Norrland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html" class="active">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Shop -->
+  <section class="container section">
+    <h2 class="section-title">Shop</h2>
+    <p class="section-sub">Every product we make, in one place.</p>
+
+    <div class="filters" id="category-filters">
+      <!-- Populated by script.js -->
+    </div>
+
+    <div class="grid" id="product-grid">
+      <!-- Populated by script.js from products.js -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
