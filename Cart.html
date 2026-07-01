@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart — Norrland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html" class="active">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Cart -->
+  <section class="container section">
+    <h2 class="section-title">Your Cart</h2>
+    <p class="section-sub">Review your items before checkout.</p>
+
+    <div id="cart-items">
+      <!-- Populated by script.js from localStorage + products.js -->
+    </div>
+
+    <div class="cart-summary" id="cart-summary">
+      <span>Total</span>
+      <span class="cart-summary__total" id="cart-total">$0.00</span>
+      <button class="btn" onclick="showToast('Checkout is not implemented in this demo.')">Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
