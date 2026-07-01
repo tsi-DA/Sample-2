@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Norrland</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html" class="active">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="container section prose">
+    <h2 class="section-title">About Norrland</h2>
+    <p>Norrland started with a simple idea: everyday things should be made well, last a long time, and not cost more than they should.</p>
+    <p>We work with a small group of makers who care about materials — stoneware, canvas, wool, and wood — and we keep our catalog small on purpose. Every product on this site is one we use ourselves.</p>
+    <p>No seasonal drops, no clutter. Just goods worth keeping.</p>
+    <a href="products.html" class="btn">Browse the Shop</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
