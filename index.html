@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Norrland — Simple Goods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">Norrland</a>
+      <button class="nav__toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav__links">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">Shop</a>
+        <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero container">
+    <h1>Everyday goods, made simple.</h1>
+    <p>Thoughtfully made essentials, shipped to your door.</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </section>
+
+  <!-- Featured products -->
+  <section class="container section">
+    <h2 class="section-title">Featured</h2>
+    <p class="section-sub">A few favorites from the shop.</p>
+    <div class="grid" id="featured-grid">
+      <!-- Populated by script.js from products.js -->
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section section--alt">
+    <div class="container" style="text-align:center; max-width:500px;">
+      <h2 class="section-title">Stay in the loop</h2>
+      <p class="section-sub">New arrivals and offers, once a month.</p>
+      <form onsubmit="return handleNewsletter(event)" style="display:flex; gap:0.5rem;">
+        <label for="newsletter-email" class="sr-only">Email address</label>
+        <input type="email" id="newsletter-email" required placeholder="you@example.com"
+               style="flex:1; padding:0.65rem; border:1px solid var(--line); border-radius:4px;">
+        <button class="btn" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="nav__brand">Norrland</p>
+        <p class="footer__copy">© 2026 Norrland. All rights reserved.</p>
+      </div>
+      <nav class="footer__links">
+        <a href="products.html">Shop</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
