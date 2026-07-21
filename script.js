@@ -5,6 +5,21 @@
    as an array of { id, qty }.
    ========================================================================== */
 
+/* ---------- Adobe Data Layer ---------- */
+window.adobeDataLayer = window.adobeDataLayer || [];
+
+function pushPageData() {
+    adobeDataLayer.push({
+        event: "pageLoaded",
+        page: {
+            pageName: document.title,
+            pageURL: window.location.href
+        }
+    });
+
+    console.log("Adobe Data Layer:", adobeDataLayer);
+}
+
 const CART_KEY = "norrland_cart";
 
 /* ---------- Cart storage helpers ---------- */
@@ -221,6 +236,10 @@ function toggleNav() {
 /* ---------- Init ---------- */
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  // Push Page Details to Adobe Data Layer
+  pushPageData();
+
   updateCartCount();
 
   const toggle = document.querySelector(".nav__toggle");
