@@ -19,7 +19,6 @@ adobeDataLayer.push({
     }
 });
 
-
     console.log("Adobe Data Layer:", adobeDataLayer);
 }
 
