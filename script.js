@@ -7,15 +7,18 @@
 
 /* ---------- Adobe Data Layer ---------- */
 window.adobeDataLayer = window.adobeDataLayer || [];
+adobeDataLayer.push({
+    event: "addToCart",
+    commerce: {
+        productID: product.id,
+        productName: product.name,
+        productCategory: product.category,
+        price: product.price,
+        quantity: qty,
+        cta: "Add to Cart"
+    }
+});
 
-function pushPageData() {
-    adobeDataLayer.push({
-        event: "pageLoaded",
-        page: {
-            pageName: document.title,
-            pageURL: window.location.href
-        }
-    });
 
     console.log("Adobe Data Layer:", adobeDataLayer);
 }
