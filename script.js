@@ -17,7 +17,7 @@ adobeDataLayer.push({
         quantity: qty,
         cta: "Add to Cart"
     }
-});
+})
 
     console.log("Adobe Data Layer:", adobeDataLayer);
 }
